@@ -12,8 +12,11 @@ JavaScript will be added at a later date.
 
 ## 🎨 Inspiration
 
-Originally started with a 1940s theme, then redesigned after discovering mid-century swing dance poster styles.
+Originally started with a 1940s theme, then redesigned after discovering mid-century swing dance poster styles, hence why the stylesheet is named "styles3.css". The original styling leaned heavier into a war-time, early-to-mid 40s aesthetic:
+![original style, using dark navy and red](img/original-styling.png)
 
+I decided, after looking to 1940s jazz posters, to lean heavier into a late 40s, early 50s design that I felt was more fun and lively for the event. I also used more imagery in the background, similar to mid-century posters and ads.
+![new style, using lighter blue and red](img/current-styling.png)
 
 
 ## 🛠️ Tech Used
