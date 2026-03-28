@@ -23,6 +23,7 @@ I decided, after looking to 1940s jazz posters, to lean heavier into a late 40s,
 
 - HTML
 - CSS (Flexbox, styling, hover interactions)
+- ChatGPT for image generation
 
 ## 🚀 What I Learned
 
