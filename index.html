@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Throwback Swing Ball</title>
+        <!-- <link href="reset.css" rel="stylesheet" type="text/css" /> -->
+        <link href="styles3.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="./img/martini-glass-img.png">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+
+        <div class="header-item">
+                    <img id="header-img" src="./img/jitterbug.jpg"/>
+        </div>
+
+        <div class="body-container">
+            <div class="header-container">
+                
+                <div>
+                    <h1 id="home">Throwback Swing Ball</h1>
+                    <h2>Jive, Jitterbug, and Dance ’Til Midnight.</h2>
+                </div>
+                <div class="header-item">
+                    <button class="header-button" type="button">Buy Tickets</button>
+                    <button class="header-button" type="button">Dress Code</button>
+
+                </div>
+            </div>
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+            <div class="text-over">
+                <h2 id="about">About the Event</h2>
+                <p>Join us for an evening inspired by the golden age of swing, when dance halls were alive with music, style, and unforgettable energy. The Throwback Swing Dance Ball brings together dancers, music lovers, and vintage enthusiasts for a night of big band sounds and lively social dancing. All skill levels are welcome, from seasoned lindy hoppers to complete beginners. Dress to impress and get ready to swing the night away.</p>
+
+                <h3>What to Expect</h3>
+                <ul class="expectations">
+                    <li> <b>Live Music:</b> Enjoy the lively sound of a live big band bringing the rhythm and spirit of the swing era to life.</li>
+                    <li> <b>Dancing:</b> Hit the dance floor and try classic swing styles like the Lindy Hop, jitterbug, and Charleston in a welcoming social atmosphere.</li>
+                    <li> <b>Vintage Fashion:</b> Step into the past with vintage-inspired outfits, from elegant 1940s gowns to sharp swing-era suits and accessories.</li>
+                </ul>
+            </div>
+            <!-- schedule
+
+            Purpose:
+            - Section for specific info about the event's schedule
+            - Contains images and descriptions of each activity
+
+            When To Modify:
+            - [ ] Project 2 (REQUIRED FEATURE) 
+            - [ ] Project 4 (STRETCH FEATURE) 
+            - [ ] Any time between / after
+            --> 
+            <div class="schedule">
+                <h2 id="schedule" class="starburst">Event Schedule</h2>
+                    
+                <h3>Swing Dancing ~ 6:00 </h3>
+                <p>Starting at 6:00 pm when doors open, there will be a practice hour! Experienced swing dance instructors will get new dancers comfortable as they teach you some new old moves!</p>
+                <img alt="Frankie Manning dancing in Harlem" src="img/Frankie-manning-dancer-in-harlem-1.jpg" width="300"/>
+                
+                <h3>Live Music ~ 7:00 </h3>
+                <p>Our big band begins playing at 7:00 pm sharp!</p>
+                <img alt="Live band playing in dimly lit space." src="img/All-Star-Jazz-Band-1944.jpg" width="400"/>
+
+                <h3>Vintage Fashion Show ~ 9:00 </h3>
+                <p>Come dressed to impress! At 9:00 pm, we have our vintage fashion show. Those who most look like a blast from the past will win fabulous prizes!</p>
+                <img alt="Four modern-day people standing in 1940s outfits" src="img/fashion.webp" width="400"/>
+            </div>
+        
+
+            <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+            <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+            <!-- links
+
+            Purpose:
+            - Links to other resources related to the event
+
+            When To Modify:
+            - [ ] Project 2 (STRETCH FEATURE) 
+            - [ ] Project 4 (STRETCH FEATURE) 
+            - [ ] Any time between / after
+            --> 
+            <h2 id="links">Links</h2>
+
+            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <div class="links-container">
+                <div class="link-card">
+                    <a class="block" href="https://www.youtube.com/watch?v=U9yKEnewTas">
+                        <article>
+                            <h3>Learn to Lindy Hop!</h3>
+                        </article>
+                    </a>
+                    <p>Laura Glaess teaches some of the history and basic rhythms of the Lindy Hop</p>
+                </div>
+                <div class="link-card">
+                    <a class="block" href="https://youtu.be/A9wzOgG3kB4?si=XyIkJ3MBhldvpPNN">
+                        <article>
+                            <h3>Abbreviated Charleston History - Lindy Hop and Swing Dance</h3>
+                        </article>
+                    </a>
+                    <p>Learn a bit about the Gullah Geechee people who created it, why it's called "the Charleston," Runnin' Wild the shows & songs that popularized it, and so much more!</p>
+                </div>
+                <div class="link-card">
+                    <div class="link-group">
+                        <h3><a href="https://youtu.be/pkvUVddq44Q?si=Xzibj4sQIlzOwRCQ">What Women Wore in 1940s America</a></h3>
+                        <h3><a href="https://youtu.be/c2E_8j5P2pY?si=LKVr1SCWqFcWastE">What Men REALLY Wore in the 1940s</a></h3>
+                    </div>
+                    <p>Fashion in the 1940s</p>
+                </div>
+            </div>
+        </div>
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class="footer">
+            <a class="block" href="https://www.codepath.org">
+            <article>
+                <p class="footer">Contact us</p>
+                </article>
+            </a>
+        </div>
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
+    </body>
+</html>
