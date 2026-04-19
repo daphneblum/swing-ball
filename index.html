@@ -43,6 +43,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#links">Links</a></li>
+                <li><button id="theme-button" type="button">Dark Mode</button></li>
             </ul>
         </div>
 
@@ -116,7 +117,7 @@
                     
                 <h3>Swing Dancing ~ 6:00 </h3>
                 <p>Starting at 6:00 pm when doors open, there will be a practice hour! Experienced swing dance instructors will get new dancers comfortable as they teach you some new old moves!</p>
-                <img alt="Frankie Manning dancing in Harlem" src="img/Frankie-manning-dancer-in-harlem-1.jpg" width="300"/>
+                <img alt="Frankie Manning dancing in Harlem" src="img/Frankie-manning-dancer-in-harlem-1.jpeg" width="300"/>
                 
                 <h3>Live Music ~ 7:00 </h3>
                 <p>Our big band begins playing at 7:00 pm sharp!</p>
@@ -128,7 +129,34 @@
             </div>
         
 
-            <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+            <!-- rsvp -->
+             <div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <!-- info goes here -->
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ DJ from Texas has RSVP'd.</p>
+            <p>🎟️ Amy from New York has RSVP'd.</p>
+            <p>🎟️ Teresa from Montana has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+                <label for="rsvp-name">Name:</label>
+                <input type="text" id="rsvp-name" name="rsvp-name" placeholder="Your name" />
+                <label for="rsvp-state">State:</label>
+                <input type="text" id="rsvp-state" name="rsvp-state" placeholder="Your state" />
+                <label for="rsvp-email">Email:</label>
+                <input type="email" id="rsvp-email" name="rsvp-email" placeholder="Your email" />
+            </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
             <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
 
             <!-- links
@@ -178,7 +206,6 @@
                 </article>
             </a>
         </div>
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
-
+        <script src="index.js"></script>
     </body>
 </html>

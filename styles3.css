@@ -50,7 +50,7 @@ body {
     max-width: 800px;      
     margin: 0 auto;        
     padding: 0 20px;
-    background-image: url(/img/martini-glass-img.png), url(img/starburst.png);
+    background-image: url(img/martini-glass-img.png), url(img/starburst.png);
     background-repeat: no-repeat, no-repeat;
     background-position: right -400px top, left -450px bottom;  /* pushes it off the right edge */
     border: 6px solid white;
@@ -312,9 +312,189 @@ button:hover {
 
 
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--error-color-border);
+  background: var(--error-color);
+}
+
+#rsvp-form input.error {
+  border-color: var(--error-color-border);
+  background-color: var(--error-color);
+}
+
+#rsvp {
+    padding: 20px 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#rsvp-form label {
+    font-family: "Righteous", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 6px;
+}
+
+#rsvp-form input {
+    padding: 6px 10px;
+    font-size: 16px;
+    font-family: "Lobster Two", Courier, monospace;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#rsvp-button {
+    font-family: "Lobster Two", Courier, monospace;
+    font-size: 16px;
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.rsvp-participants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+/*** Dark Mode ***/
+
+#theme-button {
+    background: none;
+    border: 1px solid #f43612;
+    color: #f43612;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: "Lobster Two", Courier, monospace;
+}
+
+#theme-button:hover {
+    color: rgb(37, 168, 212);
+    border-color: rgb(37, 168, 212);
+    transform: none;
+    box-shadow: none;
+}
+
+html.dark-mode {
+    background-color: var(--bg-color-dark-mode);
+}
+
+html.dark-mode body {
+    color: var(--text-color-dark-mode);
+}
+
+html.dark-mode .body-container {
+    background-color: rgba(20, 17, 12, 0.92);
+    border-color: var(--accent-color-medium);
+    outline-color: var(--accent-color-light);
+}
+
+html.dark-mode .navbar {
+    background-color: var(--accent-color-darkest);
+    box-shadow: 0px 2px 0px var(--accent-color-medium);
+}
+
+html.dark-mode .navbar ul li a {
+    color: var(--accent-color-light);
+}
+
+html.dark-mode .navbar ul li a:hover {
+    color: var(--accent-color-green);
+}
+
+html.dark-mode #theme-button {
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-medium);
+}
+
+html.dark-mode #theme-button:hover {
+    color: var(--accent-color-green);
+    border-color: var(--accent-color-green);
+}
+
+html.dark-mode .footer {
+    background-color: var(--accent-color-darkest);
+    box-shadow: 0px -2px 0px var(--accent-color-medium);
+    color: var(--accent-color-light);
+}
+
+html.dark-mode h1 {
+    color: var(--accent-color-light);
+    -webkit-text-stroke-color: var(--accent-color-dark);
+}
+
+html.dark-mode h2,
+html.dark-mode h3 {
+    color: var(--accent-color-light);
+}
+
+html.dark-mode .header-button {
+    background-color: var(--accent-color-dark);
+    color: var(--accent-color-light);
+}
+
+html.dark-mode .text-over {
+    background: rgba(14, 11, 7, 0.65);
+}
+
+html.dark-mode .link-card {
+    background-color: rgba(14, 11, 7, 0.55);
+    border-color: var(--accent-color-medium);
+}
+
+html.dark-mode .link-card:hover {
+    box-shadow: 4px 4px 0px var(--accent-color-medium);
+}
+
+html.dark-mode .starburst {
+    background: var(--accent-color-darkest);
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-medium);
+}
+
+html.dark-mode a:link {
+    color: var(--accent-color-light);
+}
+
+html.dark-mode a:visited {
+    color: var(--accent-color-medium);
+}
+
+html.dark-mode a:hover,
+html.dark-mode a:active {
+    color: var(--accent-color-green);
+}
+
+html.dark-mode .body-container img {
+    border-color: var(--accent-color-dark);
+    box-shadow: 4px 4px 0px var(--accent-color-darkest);
+}
 
 /*** Custom Colors (OPTIONAL) ***
   
@@ -359,15 +539,15 @@ button:hover {
     --text-color: #333;
 
     /* Dark Mode */
-    --bg-color-dark-mode: #3e3377;
-    --text-color-dark-mode: #fff;
+    --bg-color-dark-mode: #0f0e0c;
+    --text-color-dark-mode: #e8dfc8;
 
     /* Accent Colors */
-    --accent-color-light: #d2cff5;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #28eb76;
+    --accent-color-light: #d4c9a8;
+    --accent-color-medium: #7a6a52;
+    --accent-color-dark: #3a2c1a;
+    --accent-color-darkest: #161209;
+    --accent-color-green: #c8a84a;
 
     /* Error Colors */
     --error-color: #f8bbd0;
