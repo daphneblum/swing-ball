@@ -379,8 +379,74 @@ button:hover {
     text-align: center;
 }
 
+.rsvp-para {
+  text-align: center;
+}
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
-/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: rgb(124, 203, 212);
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+    border-radius: 50px;
+    border: 4px solid #f4efe6;
+    
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+#modal-item {
+    /* Optional: Style individual elements within the modal */
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-item img {
+    width: 50%;
+    height: auto;
+    /* border: none;
+    box-shadow: none; */
+}
 /*** Dark Mode ***/
 
 #theme-button {
@@ -392,13 +458,15 @@ button:hover {
     padding: 2px 8px;
     border-radius: 4px;
     font-family: "Lobster Two", Courier, monospace;
+    box-shadow: 0px 2px 0px #000;
+    transition: all 0.1s ease;
 }
 
 #theme-button:hover {
     color: rgb(37, 168, 212);
     border-color: rgb(37, 168, 212);
-    transform: none;
-    box-shadow: none;
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px #000;
 }
 
 html.dark-mode {
@@ -431,11 +499,14 @@ html.dark-mode .navbar ul li a:hover {
 html.dark-mode #theme-button {
     color: var(--accent-color-light);
     border-color: var(--accent-color-medium);
+    background-color: var(--accent-color-dark);
+    box-shadow: 0px 4px 0px var(--accent-color-darkest);
 }
 
 html.dark-mode #theme-button:hover {
     color: var(--accent-color-green);
     border-color: var(--accent-color-green);
+    box-shadow: 0px 2px 0px var(--accent-color-darkest);
 }
 
 html.dark-mode .footer {
@@ -494,6 +565,21 @@ html.dark-mode a:active {
 html.dark-mode .body-container img {
     border-color: var(--accent-color-dark);
     box-shadow: 4px 4px 0px var(--accent-color-darkest);
+}
+
+html.dark-mode .modal-container {
+    background-color: var(--accent-color-darkest);
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-medium);
+    outline-color: var(--accent-color-light);
+}
+
+html.dark-mode #modal-text {
+    color: var(--accent-color-light);
+}
+
+html.dark-mode .modal-container img {
+    border-color: var(--accent-color-medium);
 }
 
 /*** Custom Colors (OPTIONAL) ***

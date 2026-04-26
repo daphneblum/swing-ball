@@ -41,7 +41,7 @@ themeButton.addEventListener('click', toggleDarkMode);
 // Step 1: Add your query for the submit RSVP button here
 const rsvpButton = document.querySelector("#rsvp-button");
 
-const addParticipant = (event) => {
+const addParticipant = (person) => {
     // Step 2: Write your code to manipulate the DOM here
     event.preventDefault();
 
@@ -95,9 +95,15 @@ const validateForm = (event) => {
       input.classList.remove("error");
     }
   }
+  let person = {
+    name: rsvpInputs[0].value,
+    state: rsvpInputs[1].value,
+    email: rsvpInputs[2].value
+  }
 
   if (!containsErrors) {
-    addParticipant(event);
+    addParticipant(person);
+    toggleModal(person);
   }
 
 }
@@ -107,4 +113,42 @@ rsvpButton.removeEventListener('click', addParticipant);
 rsvpButton.addEventListener('click', validateForm);
 
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
-/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+/*** Modal ***
+  
+  Purpose:
+  - Use this starter code to add a pop-up modal to your website.
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Project 9 (STRETCH FEATURE)
+  - [ ] Any time after
+***/
+
+const toggleModal = (person) => {
+    let modal = document.querySelector("#success-modal");
+    let modalContent = document.querySelector("#modal-text");
+    
+    // TODO: Update modal display to flex
+    modal.style.display = "flex";
+
+    // TODO: Update modal text to personalized message
+    modalContent.textContent = `Get ready to swing the night away, ${person.name}!`;
+
+    // Set modal timeout to 5 seconds
+    setTimeout(() => {
+      modal.style.display = "none";
+      clearInterval(intervalId);
+    }, 5000);
+    
+    let intervalId = setInterval(animateImage, 500);
+
+}
+
+// animation variables and animateImage() function
+let rotateFactor = 0;
+let modalImage = document.querySelector("#modal-img");
+let animateImage = () => {
+  rotateFactor = rotateFactor === 0 ? -10 : 0;
+  modalImage.style.transform = `rotate(${rotateFactor}deg)`;
+}
